@@ -1,0 +1,20 @@
+{
+    "name": "Hide you meet mic",
+    "version": "1.0",
+    "description": "Hide you mic on your meet calls",
+    "icons":
+   {
+      "128": "images/logo.png"
+   },
+    "browser_action": {
+        
+    },
+    "content_scripts": [
+        {
+          "matches": ["https://meet.google.com/*"],
+          "js": ["index.js"],
+          "run_at": "document_start"
+        }
+    ],
+    "manifest_version": 2
+}
